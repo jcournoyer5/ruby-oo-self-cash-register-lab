@@ -1,8 +1,17 @@
 class CashRegister
     attr_accessor :total 
     
-    def initialization(total)
+    def new=(total)
+        
+    def initialization(total = 0)
         @total = 0
+       
+    end
+       
+       
+       
+       
+       
        
     end    
     
@@ -15,19 +24,19 @@ end
 class Person   
  attr_accessor :name   
  
- @@all = []    
+    
  def initialize(name)
         @name = name
-        @@all << self
+        
  end    
  
  def self.all
-        @@all
+        
  end
  
  def add_item(title, price, quantity)
      
-     @total = 0
+     @total 
      self.total
    # new_total = @total + (price * quantity)
  end
