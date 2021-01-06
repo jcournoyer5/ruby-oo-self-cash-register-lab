@@ -1,9 +1,9 @@
 class CashRegister
-    attr_accessor :total, :new 
+    attr_accessor :total
     
     def initialization(total = 0)
         @total = total
-        @new = new
+       
     end    
     
     def apply_discount
@@ -26,12 +26,14 @@ class Person
  end
  
  def add_item(title, price, quantity)
-     @total
      
-     price_total = @total + (price * quantity)
+     @total = 0
+     self.total
+   # new_total = @total + (price * quantity)
  end
+  #   add_item(("tomato", 1.76, 2) 
 
-def remove_item(title, quantity)
+ def void_last_transaction(title, quantity)
     
-end   
+ end   
 end
