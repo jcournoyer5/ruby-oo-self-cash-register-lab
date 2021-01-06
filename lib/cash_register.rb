@@ -6,15 +6,9 @@ class CashRegister
         @total = 0
        
     end
-       
-       
-       
-       
-       
-
     
     def apply_discount
-        
+        100.class
     end    
     
 end    
