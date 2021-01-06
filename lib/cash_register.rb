@@ -4,7 +4,7 @@ class CashRegister
     def new=(total)
         
     def initialization(total = 0)
-        @total = 0
+        @total == 0
        
     end
        
