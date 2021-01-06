@@ -1,5 +1,5 @@
 class CashRegister
-  #  attr_accessor :total 
+    attr_accessor :total 
     
     def new=(total)
         
@@ -37,8 +37,8 @@ class Person
  def add_item(title, price, quantity)
      
      @total 
-     self.total
-   # new_total = @total + (price * quantity)
+     
+     @total = @total + (price * quantity)
  end
   #   add_item(("tomato", 1.76, 2) 
 
