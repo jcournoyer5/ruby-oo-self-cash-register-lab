@@ -14,9 +14,9 @@ class CashRegister
     
    
     def apply_discount
-        @total = @total - @discount
+        @total = @total - (@total * @discount)
      
-        
+       # "There is no discount to apply."
     end    
     
  
@@ -25,7 +25,10 @@ class CashRegister
     @total = @total + (price * quantity)
     
  end
-  #   add_item(("tomato", 1.76, 2) 
+ 
+ def items
+ end     
+ 
 
  def void_last_transaction(title, quantity)
     
