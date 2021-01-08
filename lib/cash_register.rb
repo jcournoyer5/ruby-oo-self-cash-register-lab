@@ -29,7 +29,7 @@ class CashRegister
     
  end
  
- def items 
+ def items(title) 
      add_item[title]
      
  end     
