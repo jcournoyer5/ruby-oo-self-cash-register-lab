@@ -15,14 +15,11 @@ class CashRegister
    
     def apply_discount
         discount_total = @total * discount
-      
-    #def discount(name = "Ruby programmer")
- # puts "Hello, #{name}"
-  #  end 
+     
         
     end    
     
-end    
+  
 
  
  def add_item(title, price, quantity)
@@ -35,3 +32,4 @@ end
  def void_last_transaction(title, quantity)
     
  end   
+end
