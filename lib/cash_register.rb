@@ -1,4 +1,4 @@
-require "pry"
+
 
 class CashRegister
     attr_accessor :total, :discount 
@@ -14,8 +14,8 @@ class CashRegister
     
    
     def apply_discount
-        @total =  (@total - @discount)
-     binding.pry
+        @total =  @total - (@discount * 10)
+     
        # "There is no discount to apply."
     end    
     
