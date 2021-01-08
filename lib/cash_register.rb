@@ -1,14 +1,24 @@
+
+
 class CashRegister
     attr_accessor :total 
     
         
-    def initialize(total = 0)
+    def initialize(discount = 20)
         @total = 0
        
     end
     
+   
+    
+   
     def apply_discount
-        100.class
+        discount_total = @total * discount
+      
+    #def discount(name = "Ruby programmer")
+ # puts "Hello, #{name}"
+  #  end 
+        
     end    
     
 end    
