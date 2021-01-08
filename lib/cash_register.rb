@@ -1,4 +1,4 @@
-
+require "pry"
 
 class CashRegister
     attr_accessor :total, :discount 
@@ -26,7 +26,7 @@ class CashRegister
  
  def add_item(title, price, quantity = 1)
      counter = 0 
-     @last_price = price
+     @last_price = price * quantity
      while counter < quantity
          
      @items << title
@@ -44,7 +44,7 @@ class CashRegister
  
 
  def void_last_transaction
-     
+    # binding.pry
     @total = @total - @last_price
  end   
 end
