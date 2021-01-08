@@ -30,7 +30,7 @@ class CashRegister
  end
  
  def items 
-     add_item[1]
+     add_item[title]
      
  end     
  
